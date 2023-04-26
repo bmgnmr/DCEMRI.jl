@@ -73,7 +73,7 @@ end
 
 
 function fitdce(Ct::Array{Float64,M}, mask::BitArray{N}, t::Vector{Float64},
-                   Cp::Vector{Float64}; models=[2], residthresh=1.0, Ktmax=5.0) where {M,N}
+                   Cp::Vector{Float64}; models=[2], residthresh=1.0, Ktmax=15.0) where {M,N}
   @dprint "fitting DCE data"
   sizein = size(Ct)
   n = prod(sizein[2:end])
